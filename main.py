@@ -19,6 +19,8 @@ def afficher_grille(grille):
     print() #saut de ligne apres toute la grille
 afficher_grille(frame)
 
+
+
 def compute_number_neighbors(padded_frame, index_line, index_colomn):
     #calculer le nombre de voisins vivants
     number_neighbors = 0
@@ -26,4 +28,4 @@ def compute_number_neighbors(padded_frame, index_line, index_colomn):
         for colonne in range(index_colomn - 1, index_colomn + 2):
             if (ligne != index_line or colonne != index_colomn):
                 number_neighbors += padded_frame[ligne, colonne]
-        return number_neighbors        
+        return number_neighbors 
