@@ -59,6 +59,10 @@ def compute_next_frame(frame):
     
     return nouvelle_frame
 
+
+
+
+
 while True:
     afficher_grille(frame)
     frame = compute_next_frame(frame)
